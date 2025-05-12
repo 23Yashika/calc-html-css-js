@@ -1,0 +1,82 @@
+
+
+body {
+    background: #060505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .heading {
+color: rgb(237, 201, 19);
+font-size: 3em;
+  }
+
+  .calculator {
+    background: #828239;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(124, 10, 10, 0.2);
+    padding: 20px;
+    width: 300px;
+  }
+
+  .calculator:hover{
+    background-color: #6554ea;
+    color: aqua;
+  }
+  
+  .display {
+    background: #041639;
+    color: rgb(241, 7, 7);
+    font-size: 3em;
+    text-align: right;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    min-height: 40px;
+    overflow-x: auto;
+  }
+  .display:hover {
+background-color: #080200;
+color: blue;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  .button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    color: #f43b16;
+    background-color: #080101;
+  }
+  
+  button.equal {
+    background-color: #a794e5;
+    color: rgb(21, 21, 21);
+    grid-column: span 3;
+  }
+
+  button.equal:hover {
+    background-color: #0ca943;
+    color: #080200;
+  }
+  
+  
+  button.zero {
+    grid-column: span 2;
+  }
+  
